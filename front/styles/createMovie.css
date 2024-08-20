@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(24, 23, 23);
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  padding: 0%;
+  border: 2px solid rgb(24, 23, 23);
+}
+header,
+#inicio {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(24, 23, 23);
+}
+#inicio {
+  color: rgb(255, 255, 255);
+}
+.logo {
+  display: flex;
+  height: 70px;
+  width: auto;
+  margin-left: 2vw;
+}
+#icon {
+  height: 50px;
+  width: auto;
+  margin-top: 0.5vw;
+}
+header {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  margin-top: 0;
+  padding-top: 0;
+}
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+/* efecto degradado */
+a {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(196, 13, 96),
+    rgb(34, 3, 255)
+  );
+  background-clip: text;
+  color: transparent;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(34, 3, 255),
+    rgb(196, 13, 96)
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: larger;
+  transition-duration: 400ms;
+}
+#formulario {
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#titulo {
+  font-size: 30px;
+  margin-top: 5vw;
+  padding-top: 1vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(196, 13, 96),
+    rgb(34, 3, 255)
+  );
+  background-clip: text;
+  color: transparent;
+}
+#cargarFormulario {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  align-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+}
+input {
+  width: 300px;
+  height: 50px;
+  background: rgb(24, 23, 23);
+  outline: none;
+  border: 2px solid rgb(196, 13, 96);
+  border-radius: 5px;
+  padding: 0 15px;
+  box-shadow: 0 0 10px rgb(196, 13, 96), inset 0 0 10px rgb(34, 3, 255);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+input::placeholder {
+  color: rgb(66, 65, 65);
+}
+.boton1,
+.boton2 {
+  margin-left: 1vw;
+  border: 2px solid rgb(196, 13, 96);
+  box-shadow: 0 0 10px rgb(196, 13, 96), inset 0 0 10px rgb(34, 3, 255);
+  color: rgb(34, 3, 255);
+  font-size: 16px;
+}
